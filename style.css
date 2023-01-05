@@ -8,6 +8,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    background-color: white;
 }
 
 header {
@@ -47,7 +48,6 @@ header {
 }
 
 #nav_left ul li:hover {
-    color: black;
     border-bottom: 4px solid #ff7d1b;
 }
 

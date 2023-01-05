@@ -76,3 +76,24 @@ window.onclick = function (event) {
         document.getElementById('model').style.display = "none";
     }
 }
+var mode = 'light';
+function switchmode() {
+    if (mode == "light") {
+        mode = "dark";
+        document.querySelector('body').style.backgroundColor = '#252525';
+        document.querySelector('#nav_left img').style.filter = 'invert(1)';
+        document.getElementById('name').style.color = 'white';
+        document.querySelector('#nav_right div img').style.filter = "invert(0)";
+        document.querySelector('#nav_right div span').style.color = 'black';
+        document.getElementById('price').style.color = 'white';
+    }
+    else {
+        mode = "light";
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('#nav_left img').style.filter = 'invert(0)';
+        document.getElementById('name').style.color = 'black';
+        document.querySelector('#nav_right div img').style.filter = "invert(1)";
+        document.querySelector('#nav_right div span').style.color = 'white';
+        document.getElementById('price').style.color = 'black';
+    }
+}
