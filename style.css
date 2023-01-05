@@ -221,3 +221,95 @@ section {
 #details div button:nth-child(4):hover {
     background-color: #ffac6a;
 }
+
+#model {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(64, 64, 64, 0.8);
+    display: none;
+}
+
+#modelmainphoto {
+    position: relative;
+}
+
+#modelmainphoto div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.leftarw {
+    position: absolute;
+    left: -20px;
+}
+
+.rightarw {
+    position: absolute;
+    right: -20px;
+}
+
+.close {
+    position: absolute;
+    right: -22px;
+    top: -22px;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: none;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+#modelmainphoto img {
+    width: 450px;
+    height: 450px;
+    border-radius: 15px;
+}
+
+#modelthums {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 14px;
+    width: 400px;
+}
+
+#modelthums img {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px;
+}
+
+#modelthums img:nth-child(1) {
+    border: 3px solid #ff7d1b;
+    filter: opacity(0.5);
+}
