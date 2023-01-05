@@ -45,3 +45,34 @@ function addtocart() {
     document.querySelector('#nav_right div span').style.display = 'block';
     document.querySelector('#nav_right div span').innerHTML = quan;
 }
+
+function whichphoto(temp) {
+    if (temp == -1) {
+        if (currentpic != 1) {
+            photochange(currentpic - 1);
+        }
+        else {
+            photochange(4);
+        }
+    }
+    else if (temp == 1) {
+        if (currentpic == 4) {
+            photochange(1);
+        }
+        else {
+            photochange(currentpic + 1);
+        }
+    }
+}
+function modelbox() {
+    document.getElementById('model').style.display = 'flex';
+}
+function closemodel() {
+    document.getElementById('model').style.display = 'none';
+}
+
+window.onclick = function (event) {
+    if (event.target == document.getElementById('model')) {
+        document.getElementById('model').style.display = "none";
+    }
+}
