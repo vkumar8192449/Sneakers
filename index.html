@@ -22,6 +22,31 @@
             <img src="images/image-avatar.png" alt="">
         </nav>
     </header>
+
+    <section>
+        <div id="photos">
+            <div id="mainphoto"><img src="images/image-product-1.jpg" alt="" onclick="modelbox()"></div>
+            <div id="thums">
+                <img src="images/image-product-1-thumbnail.jpg" alt="" onclick="photochange(1)">
+                <img src="images/image-product-2-thumbnail.jpg" alt="" onclick="photochange(2)">
+                <img src="images/image-product-3-thumbnail.jpg" alt="" onclick="photochange(3)">
+                <img src="images/image-product-4-thumbnail.jpg" alt="" onclick="photochange(4)">
+            </div>
+        </div>
+        <div id="details">
+            <p id="company">SNEAKER COMPANY</p>
+            <p id="name">Fall Limited Edition Sneakers</p>
+            <p id="desc">These low-profile sneakers are your perfect casual wear companion Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            <p id="price">$125.00</p>
+            <p id="mrp">$250.00</p>
+            <div>
+                <button class="sign" onclick="quantity(-1)">➖</button>
+                <button class="quan">1</button>
+                <button class="sign" onclick="quantity(+1)">➕</button>
+                <button onclick="addtocart()"><img src="images/icon-cart.png" alt=""> Add to cart</button>
+            </div>
+        </div>
+    </section>
     <script src="app.js"></script>
 </body>
 </html>
