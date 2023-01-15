@@ -58,7 +58,7 @@ header {
     width: 125px;
 }
 
-#nav_right div {
+#nav_right div:nth-child(1) {
     width: 24px;
     height: 24px;
     position: relative;
@@ -89,6 +89,90 @@ header {
     height: 38px;
     border-radius: 50%;
     border: 2.40px solid #ff7d1b;
+}
+
+
+#mycart {
+    position: absolute;
+    top: 50px;
+    left: -150px;
+    width: 300px;
+    height: 105px;
+    box-shadow: 2px 2px 15px 0px rgb(167, 166, 166);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
+    display: none;
+}
+
+#mycart p {
+    font-size: 15px;
+    color: black;
+    margin: 10px 15px;
+}
+
+#empty {
+    margin: 10px 15px;
+    color: #67686b !important;
+    font-size: 12px;
+}
+
+#mycart aside {
+    margin: 10px 15px;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+#mycart button {
+    text-align: center;
+    margin: auto;
+    display: block;
+    font-size: 15px;
+    color: white;
+    background-color: #ff7d1b;
+    border: none;
+    width: 270px;
+    height: 40px;
+    padding: 4px 26px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#mycart button:hover {
+    box-shadow: 1px 1px 5px gray;
+}
+
+
+#mycart aside img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    filter: invert(0);
+}
+
+#mycart aside div div {
+    display: flex;
+}
+
+
+#mycart aside div p {
+    font-size: 12px;
+    color: #67686b;
+}
+
+#mycart aside div p:nth-child(2) {
+    color: black;
+    font-weight: bold;
+}
+
+#mycart aside svg {
+    width: 16px;
+    height: 16px;
 }
 
 section {

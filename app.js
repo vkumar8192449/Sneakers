@@ -43,7 +43,13 @@ function quantity(id) {
 }
 function addtocart() {
     document.querySelector('#nav_right div span').style.display = 'block';
+    document.querySelector('#mycart aside').style.display = "flex";
+    document.querySelector('#mycart button').style.display = "block";
     document.querySelector('#nav_right div span').innerHTML = quan;
+    document.getElementById('calci').innerHTML = `$125.00 x ${quan}`;
+    document.getElementById('total').innerHTML = `$${quan * 125}.00`;
+    document.getElementById('empty').style.display = "none";
+    document.getElementById('mycart').style.height = "185px";
 }
 
 function whichphoto(temp) {
@@ -95,5 +101,31 @@ function switchmode() {
         document.querySelector('#nav_right div img').style.filter = "invert(1)";
         document.querySelector('#nav_right div span').style.color = 'white';
         document.getElementById('price').style.color = 'black';
+    }
+}
+
+function mycart() {
+    if (document.getElementById('mycart').style.display == 'none') {
+        document.getElementById('mycart').style.display = "block";
+    }
+    else {
+        document.getElementById('mycart').style.display = 'none';
+    }
+}
+function emptycart() {
+    quan = 1;
+    document.querySelector('#details div button:nth-child(2)').innerHTML = quan;
+    document.querySelector('#nav_right div span').style.display = 'none';
+    document.getElementById('calci').innerHTML = ``;
+    document.getElementById('total').innerHTML = ``;
+    document.getElementById('empty').style.display = "block";
+    document.getElementById('mycart').style.height = "105px";
+    document.querySelector('#mycart aside').style.display = "none";
+    document.querySelector('#mycart button').style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == document.getElementById('mycart')) {
+        document.getElementById('mycart').style.display = "none";
     }
 }
